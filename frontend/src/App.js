@@ -8,7 +8,9 @@ import Home from './pages/homepage/home';
 function App() {
   return (
     <>
+      {/* RecoilRoot로 감싸인 부분 내에서만 Recoil-atom을 가져올 수 있다. */}
       <RecoilRoot>
+        {/* styled-component에서 제공하는 ThemeProvider, 하위 모든 컴포넌트에 대해서 해당 프롭스를 전부 전달 한다. */}
         <ThemeProvider theme={ normal }>
           <Main>
             <Routes>
