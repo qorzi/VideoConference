@@ -10,7 +10,7 @@
   },
   // 플러그인의 규칙을 그대로 따를 때, 적는다.
   "extends": [
-      "react-app:recommended",
+      "react-app",
       "eslint:recommended",
       "prettier",
       "prettier/prettier",
