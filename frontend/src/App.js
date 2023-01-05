@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
 import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue } from 'recoil';
 import styled, { ThemeProvider } from 'styled-components'
