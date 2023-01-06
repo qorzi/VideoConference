@@ -1,29 +1,22 @@
 {
-    "env": {
-        "es2021": true,
-        "node": true,
-        "browser": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "plugins": [
-        "react",
-        "prettier"
-    ],
-    "rules": {
-        // 아래 두개는 eslint와 함께 사용될 때 내부적 이슈가 있어 꺼야하는 설정이다. 공식문서 참조.
-        "arrow-body-style": "off",
-        "prefer-arrow-callback": "off"
+  "env": {
+    "es2021": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    // 아래 두개는 eslint와 함께 사용될 때 내부적 이슈가 있어 꺼야하는 설정이다. 공식문서 참조.
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  }
 }

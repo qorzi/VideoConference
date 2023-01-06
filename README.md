@@ -120,6 +120,7 @@ cd ./[Folder Name] && npx lint-staged
 설정이 완료되면, 
 ```bash
 $ npm run prepare
+# 그냥 npm i 해도됨
 ```
 
 이제 git commit 해서 테스트 해보면 된다.
