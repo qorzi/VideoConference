@@ -1,5 +1,5 @@
 {
-  "name": "videoconference",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,8 +20,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "//lint": "해당 파일에 lint가 적용된다.",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix src/",
-    "fix": "prettier --write src/**/*.{js,jsx,ts,tsx,css,scss,md}"
+    "//fix": "해당 파일을 prettier가 수정한다.",
+    "fix": "prettier --write src/**/*.{js,jsx,ts,tsx,css,scss,md}",
+    "//prepare": "해당 프로젝트는 .git이 상위 폴더에 존재 하기 때문에, prepare가 .git이 있는 폴더까지 도달했다가 하위로 내려와 인스톨 되어야 한다.",
+    "prepare": "cd ../ && husky install ./frontend/.husky"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +54,17 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.1"
+  },
+  "//lint-staged": "lint-staged가 사용할 lint 규칙을 명시해줘야 한다. prettier와 eslint를 가지고 lint한다.",
+  "lint-staged": {
+    "//**/*{js,ts}": "모든 경로 모든 js, ts 파일에 대해 린드를 실행한다.",
+    "**/*.{js,ts}": [
+      "prettier . --write",
+      "eslint --ext .js,.jsx,.ts,.tsx --fix src/"
+    ],
+    "*.{js,css,scss}": "prettier --write"
   }
 }
