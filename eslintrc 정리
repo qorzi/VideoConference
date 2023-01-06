@@ -12,9 +12,9 @@
   // 플러그인의 규칙을 그대로 따를 때, 적는다.
   "extends": [
       // 세미 클론에 대한 옵션을 사용하기 위한 extends
-      "standard",
-      "react-app",
+      // "standard",
       "eslint:recommended",
+      "react-app",
       "prettier",
       "prettier/prettier",
       "plugin:prettier/recommended",

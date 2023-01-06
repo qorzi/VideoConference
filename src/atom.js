@@ -1,4 +1,4 @@
-import { atom } from "recoil";
+import { atom } from 'recoil';
 
 // 해당 파일은 Recoil-atom을 선언하는 공간이다.
 
