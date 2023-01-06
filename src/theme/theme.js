@@ -1,5 +1,3 @@
-
-
 export const normal = {
   color: {
     defaultBgColor: '#333333',
@@ -7,4 +5,4 @@ export const normal = {
     defaultColor: '#ffffff',
     defaultmdColor: '#aaaaaa',
   },
-}
+};

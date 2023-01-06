@@ -3,21 +3,17 @@ import { useState, useEffect } from 'react';
 // import { useRecoilState } from 'recoil';
 
 export default function Home() {
-  const [loadding, setLodding] = useState(true)
+  const [loadding, setLodding] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setLodding(false)
+      setLodding(false);
     }, 1500);
-  }, [])
+  }, []);
 
   if (loadding) {
-    return (
-      <div>로딩중...</div>
-    )
+    return <div>로딩중...</div>;
   } else {
-    return (
-      <div>홈페이지임</div>
-    )
+    return <div>홈페이지임</div>;
   }
 }
