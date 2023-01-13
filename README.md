@@ -124,3 +124,21 @@ $ npm run prepare
 ```
 
 이제 git commit 해서 테스트 해보면 된다.
+
+# AirBnb code style 적용하기(eslint)
+
+```bash
+# react에서 적용하기 위해서 아래 코드를 사용한다.
+npm install -D eslint-config-airbnb
+
+# 에어비엔비가 가진 의존성 파일을 확인하고 설치 안된것은 설치한다.
+npm info "eslint-config-airbnb@latest" peerDependencies
+# 아래 파일들이 뜸
+{
+  eslint: '^7.32.0 || ^8.2.0',
+  'eslint-plugin-import': '^2.25.3',
+  'eslint-plugin-jsx-a11y': '^6.5.1',
+  'eslint-plugin-react': '^7.28.0',
+  'eslint-plugin-react-hooks': '^4.3.0'
+}
+```
