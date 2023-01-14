@@ -13,7 +13,6 @@ export default function Home() {
 
   if (loadding) {
     return <div>로딩중...</div>;
-  } else {
-    return <div>홈페이지임</div>;
   }
+  return <div>홈페이지임</div>;
 }

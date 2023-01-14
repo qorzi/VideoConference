@@ -142,3 +142,13 @@ npm info "eslint-config-airbnb@latest" peerDependencies
   'eslint-plugin-react-hooks': '^4.3.0'
 }
 ```
+
+.eslintrc.json에서 airbnb를 추가한다.
+```json
+"extends": [
+    //...
+    "airbnb",
+    "airbnb/hooks"
+  ]
+```
+
