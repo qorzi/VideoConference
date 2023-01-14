@@ -9,6 +9,7 @@ frontend 사전 설정
   react-router-dom
   recoil
   styled-component
+  dart-sass(scss)
 
 
 <!-- 아래 설정은 최소 구성 시에 적용하는 방법 -->
@@ -152,3 +153,4 @@ npm info "eslint-config-airbnb@latest" peerDependencies
   ]
 ```
 
+airbnb code style(한국어): https://github.com/tipjs/javascript-style-guide
