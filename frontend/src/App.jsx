@@ -3,8 +3,8 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import styled, { ThemeProvider } from 'styled-components';
-import { normal } from './theme/theme';
-import Home from './pages/homepage/home';
+import normal from './theme/theme';
+import Home from './pages/pages/homepage/home';
 
 function App() {
   return (

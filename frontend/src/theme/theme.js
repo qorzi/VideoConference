@@ -1,4 +1,4 @@
-export const normal = {
+const normal = {
   color: {
     defaultBgColor: '#333333',
     defaultDotColor: '#666666',
@@ -6,3 +6,5 @@ export const normal = {
     defaultmdColor: '#aaaaaa',
   },
 };
+
+export default normal;
