@@ -5,7 +5,7 @@
     "browser": true
   },
   "extends": [
-    "plugin:react/recommended", 
+    "plugin:react/recommended",
     "plugin:prettier/recommended",
     "airbnb",
     "airbnb/hooks"
