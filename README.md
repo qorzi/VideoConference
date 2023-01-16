@@ -5,20 +5,41 @@ frontend 사전 설정
   node -v v18.12.1
 
   사용
-  react
-  react-router-dom
-  recoil
-  styled-component
-  dart-sass(scss)
-
+  react 프레임워크
+  react-router-dom 라우터
+  recoil 상태관리매니저
+  react-responsive 반응형웹
+  styled-component style
+  dart-sass 스타일 scss
 
 <!-- 아래 설정은 최소 구성 시에 적용하는 방법 -->
 <!-- git clone일 경우, npm i 만 진행 하면 된다. -->
+
+# 설치된 메인 라이브러리
+```bash
+$ npm i react-router-dom@6
+# `import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom’` 가져다 쓰면 됨
+
+$ npm i styled-components
+# 공통 테마 설정 → theme 폴더에 있음.
+
+$ npm install recoil
+# `import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue } from 'recoil'` 가져다 쓰면 됨
+
+$ npm install react-responsive
+# https://velog.io/@pyo-sh/React-Responsive
+
+$ npm i dart-sass
+# https://smartstudio.tech/node-sass-to-dart-sass/
+```
+
 # eslint & prettier
-해당 프로젝트에선 아래의 기본적인 룰만 적용한다.
+기본적으로 아래 룰이 적용된다.
 ; semi는 필수로 적는다.
 ' 따움표는 단수만 적는다.
 탭 너비는 2칸으로 고정한다.
+
+-> airbnb code style이 적용되었다. 하단 참조.
 
 ```bash
 
